@@ -23,14 +23,14 @@ require 'rubygems'
 #
 # @author Adam Jacob <adam@opscode.com>
 #
-class Busser::RunnerPlugin::Rspec < Busser::RunnerPlugin::Base
+class Busser::RunnerPlugin::RspecDatadog < Busser::RunnerPlugin::Base
   postinstall do
     install_gem("rspec")
     install_gem("bundler", "2.3.26")
   end
 
   def test
-    rspec_path = suite_path('rspec').to_s
+    rspec_path = suite_path('rspec_datadog').to_s
 
     setup_file = File.join(rspec_path, "setup-recipe.rb")
 
@@ -56,7 +56,7 @@ class Busser::RunnerPlugin::Rspec < Busser::RunnerPlugin::Base
         run("/opt/chef/bin/chef-apply #{setup_file}")
       end
 
-      runner = File.expand_path(File.join(File.dirname(__FILE__), "..", "rspec", "runner.rb"))
+      runner = File.expand_path(File.join(File.dirname(__FILE__), "..", "rspec_datadog", "runner.rb"))
       run_ruby_script!("#{runner} -I #{rspec_path} -I #{rspec_path}/lib #{rspec_path}")
     end
   end

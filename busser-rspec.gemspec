@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'busser/rspec/version'
+require 'busser/rspec_datadog/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'busser-rspec-datadog'
-  spec.version       = Busser::Rspec::VERSION
+  spec.name          = 'busser-rspec_datadog'
+  spec.version       = Busser::RspecDatadog::VERSION
   spec.authors       = ['Adam Jacob']
   spec.email         = ['adam@opscode.com']
   spec.description   = %q{A Busser runner plugin for RSpec}

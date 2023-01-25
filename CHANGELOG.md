@@ -1,8 +1,12 @@
-## 0.8.1 / 2023-01-25
+## 0.8.5 / 2023-01-25
+
+* Fix all paths, class names, following gem rename
+
+## 0.8.1 (yanked) / 2023-01-25
 
 * Fix runner_plugin file name following gem rename
 
-## 0.8.0 / 2023-01-25
+## 0.8.0 (yanked) / 2023-01-25
 
 * Pin bundler version installed in postinstall to 2.3.26
 
