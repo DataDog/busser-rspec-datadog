@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'busser/rspec/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'busser-rspec'
+  spec.name          = 'busser-rspec-datadog'
   spec.version       = Busser::Rspec::VERSION
   spec.authors       = ['Adam Jacob']
   spec.email         = ['adam@opscode.com']
