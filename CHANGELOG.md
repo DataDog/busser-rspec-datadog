@@ -1,3 +1,7 @@
+## 0.8.0 / 2023-01-25
+
+* Pin bundler version installed in postinstall to 2.3.26
+
 ## 0.7.6 / 2015-09-28
 
 * Additional windows fixes for recent Omnibus Chef
