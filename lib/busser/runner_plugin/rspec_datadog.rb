@@ -45,7 +45,7 @@ class Busser::RunnerPlugin::RspecDatadog < Busser::RunnerPlugin::Base
         banner('Bundle Installing..')
         ENV['PATH'] = [ENV['PATH'], Gem.bindir, RbConfig::CONFIG['bindir']].join(File::PATH_SEPARATOR)
         bundle_exec = "#{File.join(RbConfig::CONFIG['bindir'], 'ruby')} " +
-          "#{File.join(Gem.bindir, 'bundle')} install --gemfile #{gemfile_path}"
+          "#{File.join(Gem.bindir, 'bundle')} install --gemfile #{gemfile_path} 2>&1"
         run("#{bundle_exec} --local || #{bundle_exec}")
       end
 
