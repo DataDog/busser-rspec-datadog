@@ -1,4 +1,4 @@
-## 0.8.6 / 2023-26-06
+## 0.8.6 / 2023-06-26
 
 * Redirect ``bundle install`` stderr to stdout to fix [some](https://github.com/DataDog/busser-rspec-datadog/pull/5) windows kitchen issues.
 
