@@ -1,3 +1,7 @@
+## 0.8.6 / 2023-26-06
+
+* Redirect ``bundle install`` stderr to stdout to fix [some](https://github.com/DataDog/busser-rspec-datadog/pull/5) windows kitchen issues.
+
 ## 0.8.5 / 2023-01-25
 
 * Fix all paths, class names, following gem rename
