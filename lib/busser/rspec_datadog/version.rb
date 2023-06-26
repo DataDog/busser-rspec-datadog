@@ -21,6 +21,6 @@ module Busser
   module RspecDatadog
 
     # Version string for the Rspec Busser runner plugin
-    VERSION = "0.8.6"
+    VERSION = "0.8.7"
   end
 end
